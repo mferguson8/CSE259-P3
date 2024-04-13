@@ -131,7 +131,7 @@ prove(L => R) :-
     member(A ^ B, R),
     del(A ^ B, R, NewR),
     nl, write('=\t'), write(L => [A | NewR]), nl, write(L => [B | NewR]),
-    write('\t (by or/left)'),
+    write('\t (by and/left)'),
     prove(L => [A | NewR]),
     prove(L => [B | NewR]),
 %And Left
