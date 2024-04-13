@@ -124,7 +124,7 @@ prove(L => R) :-
     nl, write('=\t'), write([A | NewL] => R), nl, write([B | NewL] => R),
     write('\t (by or/left)'),
     prove([A | NewL] => R),
-    prove([B | NewL] => R),
+    prove([B | NewL] => R).
 %Or Left
 
 prove(L => R) :-
@@ -133,7 +133,7 @@ prove(L => R) :-
     nl, write('=\t'), write(L => [A | NewR]), nl, write(L => [B | NewR]),
     write('\t (by and/left)'),
     prove(L => [A | NewR]),
-    prove(L => [B | NewR]),
+    prove(L => [B | NewR]).
 %And Left
 
 
